@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Blogs</title>
+    </head>
+    <body>
+        <h1> My Blogs</h1>
+        {%for post in posts%}
+        <div>
+            <h2>{{post.title}}</h2>
+            <p>{{post.test | truncatewords : 100}}</p>
+        </div>
+        {%endfor%}
+    </body>
+</html>
